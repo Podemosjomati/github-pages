@@ -1,0 +1,182 @@
+!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podemos Marbella y San Pedro</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom purple color similar to Podemos branding */
+        .bg-podemos-purple { background-color: #6A0DAD; } /* Example purple */
+        .text-podemos-purple { color: #6A0DAD; }
+        .border-podemos-purple { border-color: #6A0DAD; }
+        .hover\:bg-podemos-purple-dark:hover { background-color: #50077E; } /* Darker purple for hover */
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-podemos-purple">
+                Podemos Marbella y San Pedro
+                </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#inicio" class="text-gray-700 hover:text-podemos-purple">Inicio</a>
+                <a href="#nosotros" class="text-gray-700 hover:text-podemos-purple">Sobre Nosotros</a>
+                <a href="#noticias" class="text-gray-700 hover:text-podemos-purple">Noticias</a>
+                <a href="#contacto" class="text-gray-700 hover:text-podemos-purple">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </nav>
+        <div id="mobile-menu" class="md:hidden hidden bg-white px-6 pb-3">
+            <a href="#inicio" class="block py-2 text-gray-700 hover:text-podemos-purple">Inicio</a>
+            <a href="#nosotros" class="block py-2 text-gray-700 hover:text-podemos-purple">Sobre Nosotros</a>
+            <a href="#noticias" class="block py-2 text-gray-700 hover:text-podemos-purple">Noticias</a>
+            <a href="#contacto" class="block py-2 text-gray-700 hover:text-podemos-purple">Contacto</a>
+        </div>
+    </header>
+
+    <section id="inicio" class="bg-podemos-purple text-white py-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Transformando Marbella y San Pedro</h1>
+            <p class="text-lg md:text-xl mb-8">Un futuro más justo, verde y feminista para nuestra gente.</p>
+            <a href="#contacto" class="bg-white text-podemos-purple font-semibold py-3 px-8 rounded-lg shadow hover:bg-gray-200 transition duration-300">Únete al cambio</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Sobre Nosotros</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-10">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <img src="https://placehold.co/600x400/eeeeee/333333?text=Imagen+Equipo" alt="Imagen del equipo o evento de Podemos" class="rounded-lg shadow-lg w-full" onerror="this.src='https://placehold.co/600x400/eeeeee/cccccc?text=Error+cargando+imagen'">
+                </div>
+                <div class="md:w-1/2 text-gray-700">
+                    <h3 class="text-2xl font-semibold mb-4 text-podemos-purple">Nuestros Principios</h3>
+                    <p class="mb-4">Somos la fuerza política que trabaja por la justicia social, la igualdad de oportunidades y la defensa de los servicios públicos en Marbella y San Pedro Alcántara.</p>
+                    <p class="mb-4">Creemos en la participación ciudadana como motor de cambio y en la necesidad de políticas valientes que pongan a las personas y al planeta en el centro.</p>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Defensa de lo público (sanidad, educación).</li>
+                        <li>Políticas de vivienda asequible.</li>
+                        <li>Transición ecológica justa.</li>
+                        <li>Feminismo e igualdad.</li>
+                        <li>Transparencia y lucha contra la corrupción.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="noticias" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Últimas Noticias y Eventos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400/d1c4e9/333333?text=Noticia+1" alt="Imagen noticia 1" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/eeeeee/cccccc?text=Error+imagen'">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">10 Abril, 2025</span>
+                        <h3 class="text-xl font-semibold text-podemos-purple my-2">Título de la Noticia o Evento 1</h3>
+                        <p class="text-gray-700 mb-4">Breve descripción de la noticia o el evento. Lorem ipsum dolor sit amet consectetur...</p>
+                        <a href="#" class="text-podemos-purple hover:underline font-medium">Leer más</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://placehold.co/600x400/b39ddb/333333?text=Noticia+2" alt="Imagen noticia 2" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/eeeeee/cccccc?text=Error+imagen'">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">5 Abril, 2025</span>
+                        <h3 class="text-xl font-semibold text-podemos-purple my-2">Próxima Asamblea Ciudadana</h3>
+                        <p class="text-gray-700 mb-4">Te invitamos a participar en nuestra próxima asamblea para debatir las propuestas municipales.</p>
+                        <a href="#" class="text-podemos-purple hover:underline font-medium">Más detalles</a>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                     <img src="https://placehold.co/600x400/9575cd/ffffff?text=Noticia+3" alt="Imagen noticia 3" class="w-full h-48 object-cover" onerror="this.src='https://placehold.co/600x400/eeeeee/cccccc?text=Error+imagen'">
+                    <div class="p-6">
+                        <span class="text-sm text-gray-500">1 Abril, 2025</span>
+                        <h3 class="text-xl font-semibold text-podemos-purple my-2">Campaña por la Vivienda Digna</h3>
+                        <p class="text-gray-700 mb-4">Continuamos recogiendo firmas y apoyos para nuestra iniciativa sobre vivienda asequible.</p>
+                        <a href="#" class="text-podemos-purple hover:underline font-medium">Leer más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Contacto y Participación</h2>
+            <div class="max-w-lg mx-auto bg-gray-50 p-8 rounded-lg shadow-md">
+                <p class="text-center text-gray-700 mb-6">¿Quieres colaborar, tienes alguna duda o propuesta? ¡Contacta con nosotros!</p>
+                <form>
+                    <div class="mb-4">
+                        <label for="name" class="block text-gray-700 text-sm font-medium mb-2">Nombre</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-podemos-purple focus:border-transparent" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="email" class="block text-gray-700 text-sm font-medium mb-2">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-podemos-purple focus:border-transparent" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="message" class="block text-gray-700 text-sm font-medium mb-2">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-podemos-purple focus:border-transparent" required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="bg-podemos-purple text-white font-semibold py-3 px-8 rounded-lg shadow hover:bg-podemos-purple-dark transition duration-300">
+                            Enviar Mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="text-center mt-10 text-gray-600">
+                <p>También puedes encontrarnos en [Dirección Sede Local, si aplica] o seguirnos en redes sociales.</p>
+                </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p>© 2025 Podemos Marbella y San Pedro. Todos los derechos reservados.</p>
+            <div class="mt-4">
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Facebook</a> |
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Twitter</a> |
+                <a href="#" class="text-gray-400 hover:text-white mx-2">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                // Close mobile menu if open
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
